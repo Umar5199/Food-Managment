@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+
+
+
+
+  <link rel="stylesheet" href="Style/style.css">
+
+
+<script src="Scripting/Jqurry.js"></script>
+
+  <script>
+    function ok() {
+      debugger;
+      var a = document.getElementById("u1").value;
+      var b = document.getElementById("p1").value;
+      var c = document.getElementById("n1").value;
+
+
+
+      $.ajax({
+
+
+        URL : "insert.php",
+      type : "POST",
+        data : { a,b,c },
+        success : function name(data) {
+          
+          if(data==1)
+          {
+            alert("yes");
+
+          }
+          else
+          {
+            alert("no");
+          }
+        }
+
+
+      })
+       
+      
+   
+      
+        
+
+    }
+
+
+
+  </script>
+</head>
+
+<body style="background-color: lightskyblue;">
+
+  <div class="id2">
+  
+
+    <form class="id"><b>Sign In</b></form>
+    <br>
+    <label class="id4"> <b>Username :</b> </label>
+    <input id="u1" type placeholder="Enter your name">
+    <br><br>
+    <label class="id4"><b>Password :</b> </label>
+    <input id="p1" type placeholder="Enter Password">
+    <br><br>
+    <label class="id4"> <b>Phone number :</b></label>
+    <input id="n1" type placeholder="phone number">
+    <br><br>
+
+    <label class="id4"> <b>Gender : </b> </label>
+    <select>
+
+      <option>Male</option>
+      <option>f-male</option>
+      <option>Others</option>
+    </select>
+    <br><br>
+
+    <label class="id4"> <b>Select Country :</b> </label>
+
+
+    <select>
+      <option>Pakistan</option>
+      <option>India</option>
+      <option>USA</option>
+      <option>France</option>
+      <option>UAE</option>
+    </select>
+
+    <br><br>
+    <input id="bu" type="button" value="Submit" onclick="ok()">
+
+    <p> <b>alerady you have account ? </b> <a href="Login.html">Log in</a> </p>
+  </div>
+
+</body>
+
+</html>

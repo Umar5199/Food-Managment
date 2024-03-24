@@ -1,0 +1,37 @@
+.id{
+       
+    margin-top: 1cm;
+    font-size: 1cm ;
+    text-align: center;
+  
+
+}
+.id2{
+
+
+    border-color:darkcyan;
+}
+.id2{
+    height: auto;
+    width: auto;
+    text-align: center;
+    border-style: solid;
+    border-width: 1cm;
+}
+.id4{
+    font-size:0.5cm;
+   
+}
+#u1,#p1,#n1{
+    width: 40%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+#bu{
+
+    width: auto;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
